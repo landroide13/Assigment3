@@ -11,12 +11,12 @@ namespace linSear
         {
             Console.WriteLine("######## Please enter ID ########");
 
-            string id = Console.ReadLine();
+            //string id = Console.ReadLine();
 
             string line;
             try
             {
-                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assign1/Question1/listOfPatients.txt");
+                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100K.txt");
             
                 line = sr.ReadLine();
 
@@ -29,11 +29,8 @@ namespace linSear
 
                  foreach(string el in records)
                 {
-                        Console.WriteLine("Arr " + el);
+                    Console.WriteLine("Arr " + el);
                 }
-
-                
-                
                 sr.Close();
                 Console.ReadLine();
             }
@@ -44,7 +41,12 @@ namespace linSear
         }
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("########## Linear Search App #########");
+
+            getData();
+
+
+
         }
     }
 }

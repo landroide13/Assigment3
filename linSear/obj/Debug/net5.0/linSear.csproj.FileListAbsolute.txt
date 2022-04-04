@@ -1,0 +1,15 @@
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/bin/Debug/net5.0/linSear.deps.json
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/bin/Debug/net5.0/linSear.runtimeconfig.json
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/bin/Debug/net5.0/linSear.runtimeconfig.dev.json
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/bin/Debug/net5.0/linSear.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/bin/Debug/net5.0/ref/linSear.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/bin/Debug/net5.0/linSear.pdb
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.csproj.AssemblyReference.cache
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.GeneratedMSBuildEditorConfig.editorconfig
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.AssemblyInfoInputs.cache
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.AssemblyInfo.cs
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.csproj.CoreCompileInputs.cache
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/ref/linSear.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.pdb
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/linSear/obj/Debug/net5.0/linSear.genruntimeconfig.cache
