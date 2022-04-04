@@ -6,10 +6,10 @@ namespace linSear
 {
     class Program
     {
-        static List<string> records = new List<string>();
+        static List<Movie> records = new List<Movie>();
         static void getData()
         {
-            Console.WriteLine("######## Please enter ID ########");
+            //Console.WriteLine("######## Please enter ID ########");
 
             //string id = Console.ReadLine();
 
@@ -22,15 +22,18 @@ namespace linSear
 
                 while (line != null)
                 {
-                    records.Add(line);
-                 
+                    Movie mv = new Movie();
+                    mv.Name = line;
+                    records.Add(mv);
+                    
                     line = sr.ReadLine();
                 }
 
-                 foreach(string el in records)
+                 foreach(object el in records)
                 {
                     Console.WriteLine("Arr " + el);
                 }
+
                 sr.Close();
                 Console.ReadLine();
             }
