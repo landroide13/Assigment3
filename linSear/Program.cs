@@ -17,13 +17,16 @@ namespace linSear
 
         public static int linSearch(List<string> li, string x)
         {
-            int n = li.Capacity;
             chron.Start();
+            int n = li.Capacity;
+
             for (int i = 0; i < n; i++)
             {
                 if (li[i] == x)
-                 return i;
-                
+                {
+                    chron.Stop();
+                    return i;
+                }
                 count++;
             }
             return -1;
@@ -53,14 +56,18 @@ namespace linSear
                 if (result == -1)
                      Console.WriteLine("Element is not present in array");
                 else
-                     Console.WriteLine("Element is present at index " + result);
-                     Console.WriteLine("Element is: " + records[result]);
+                    Console.WriteLine("Element is present at index " + result);
+                    Console.WriteLine("Element is: " + records[result]);
+                    Console.WriteLine("Total Milliseconds: " + chron.Elapsed.TotalMilliseconds);
+                    Console.WriteLine();
+                    Console.WriteLine("Iterations : " + count);
 
-                Console.WriteLine();
+                //Console.WriteLine();
 
                 sr.Close();
                 Console.ReadLine();
-                chron.Stop();
+
+                //Console.ReadLine();
             }
             catch(Exception e)
             {
@@ -74,11 +81,6 @@ namespace linSear
             Console.WriteLine();
 
             setData();
-
-            Console.WriteLine("Total Milliseconds: " + chron.Elapsed.TotalMilliseconds);
-            Console.WriteLine();
-            Console.WriteLine("Iterations : " + count);
-
         }
     }
 }
