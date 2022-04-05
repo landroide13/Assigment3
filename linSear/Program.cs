@@ -20,28 +20,33 @@ namespace linSear
         }
         static void setData()
         {
+            Console.WriteLine();
+            Console.WriteLine("####### Please Enter The Name of the Movie ########");
+            Console.WriteLine();
+
+            string movieName = Console.ReadLine();
             string line;
             try
             {
-                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles20.txt");
+                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100K.txt");
             
                 line = sr.ReadLine();
 
                 while (line != null)
                 {
                     records.Add(line);
-                    
                     line = sr.ReadLine();
                 }
+                int result = linSearch(records, movieName);
+                if (result == -1)
+                     Console.WriteLine("Element is not present in array");
+                else
+                     Console.WriteLine("Element is present at index " + result);
+                     Console.WriteLine("Element is: " + records[result]);
 
-                //  foreach(object mv in records)
-                // {
-                //     Console.WriteLine("Arr " + mv);
-                // }
+                Console.WriteLine();
 
-            Console.WriteLine(records[10]);
-
-            sr.Close();
+                sr.Close();
                 Console.ReadLine();
             }
             catch(Exception e)
@@ -53,10 +58,9 @@ namespace linSear
         {
             Console.WriteLine("########## Linear Search App #########");
 
+            Console.WriteLine();
+
             setData();
-
-
-
         }
     }
 }
