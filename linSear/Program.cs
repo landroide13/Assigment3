@@ -1,6 +1,7 @@
 ﻿using System;
 using System.IO;
 using System.Collections.Generic;
+using System.Diagnostics;
 
 namespace linSear
 {
@@ -8,13 +9,22 @@ namespace linSear
     {
         static List<string> records = new List<string>();
 
+         //Counter iterations
+        static int count = 0;
+
+        //Setup Chronometer
+        static Stopwatch chron = new Stopwatch();
+
         public static int linSearch(List<string> li, string x)
         {
             int n = li.Capacity;
+            chron.Start();
             for (int i = 0; i < n; i++)
             {
                 if (li[i] == x)
-                    return i;
+                 return i;
+                
+                count++;
             }
             return -1;
         }
@@ -37,6 +47,8 @@ namespace linSear
                     records.Add(line);
                     line = sr.ReadLine();
                 }
+
+                //Linear Search
                 int result = linSearch(records, movieName);
                 if (result == -1)
                      Console.WriteLine("Element is not present in array");
@@ -48,6 +60,7 @@ namespace linSear
 
                 sr.Close();
                 Console.ReadLine();
+                chron.Stop();
             }
             catch(Exception e)
             {
@@ -61,6 +74,11 @@ namespace linSear
             Console.WriteLine();
 
             setData();
+
+            Console.WriteLine("Total Milliseconds: " + chron.Elapsed.TotalMilliseconds);
+            Console.WriteLine();
+            Console.WriteLine("Iterations : " + count);
+
         }
     }
 }
