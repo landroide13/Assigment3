@@ -6,35 +6,42 @@ namespace linSear
 {
     class Program
     {
-        static List<Movie> records = new List<Movie>();
-        static void getData()
+        static List<string> records = new List<string>();
+
+        public static int linSearch(List<string> li, string x)
         {
-            //Console.WriteLine("######## Please enter ID ########");
-
-            //string id = Console.ReadLine();
-
+            int n = li.Capacity;
+            for (int i = 0; i < n; i++)
+            {
+                if (li[i] == x)
+                    return i;
+            }
+            return -1;
+        }
+        static void setData()
+        {
             string line;
             try
             {
-                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100K.txt");
+                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles20.txt");
             
                 line = sr.ReadLine();
 
                 while (line != null)
                 {
-                    Movie mv = new Movie();
-                    mv.Name = line;
-                    records.Add(mv);
+                    records.Add(line);
                     
                     line = sr.ReadLine();
                 }
 
-                 foreach(object el in records)
-                {
-                    Console.WriteLine("Arr " + el);
-                }
+                //  foreach(object mv in records)
+                // {
+                //     Console.WriteLine("Arr " + mv);
+                // }
 
-                sr.Close();
+            Console.WriteLine(records[10]);
+
+            sr.Close();
                 Console.ReadLine();
             }
             catch(Exception e)
@@ -46,7 +53,7 @@ namespace linSear
         {
             Console.WriteLine("########## Linear Search App #########");
 
-            getData();
+            setData();
 
 
 
