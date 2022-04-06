@@ -49,7 +49,7 @@ namespace binSer
 
             try
             {
-                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100K.txt");
+                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles20.txt");
             
                 line = sr.ReadLine();
 
@@ -85,7 +85,7 @@ namespace binSer
 
             setData();
 
-            Console.WriteLine(records.Count);
+            //Console.WriteLine(records.Count);
         }
 
 
