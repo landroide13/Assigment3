@@ -21,13 +21,11 @@ namespace binSer
             {
                 //int m = l + (r - l) / 2;
                 int m = (l + r) / 2;
-                // Check the mid
+                
                 if (records[m] == x)
                 {
-                    chron.Stop();
                     return m;
                 }
-               
                 if (records.IndexOf(records[m]) < records.IndexOf(x))
                     l = m + 1;
                 else
@@ -35,6 +33,7 @@ namespace binSer
 
                 count++;    
             }
+            chron.Stop();
             return -1;
         }
 
@@ -49,7 +48,7 @@ namespace binSer
 
             try
             {
-                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles20.txt");
+                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100k.txt");
             
                 line = sr.ReadLine();
 

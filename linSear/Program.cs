@@ -8,27 +8,24 @@ namespace linSear
     class Program
     {
         static List<string> records = new List<string>();
-
-         //Counter iterations
+        //Counter iterations
         static int count = 0;
-
         //Setup Chronometer
         static Stopwatch chron = new Stopwatch();
-
         public static int linSearch(List<string> li, string x)
         {
-            chron.Start();
             int n = li.Count;
+            chron.Start();
 
             for (int i = 0; i < n; i++)
             {
                 if (li[i] == x)
                 {
-                    chron.Stop();
                     return i;
                 }
                 count++;
             }
+            chron.Stop();
             return -1;
         }
         static void setData()
@@ -39,7 +36,7 @@ namespace linSear
 
             string movieName = Console.ReadLine();
             string line;
-            try
+            try 
             {
                 StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100K.txt");
             
@@ -62,12 +59,9 @@ namespace linSear
                     Console.WriteLine();
                     Console.WriteLine("Iterations : " + count);
 
-                //Console.WriteLine();
-
                 sr.Close();
                 Console.ReadLine();
 
-                //Console.ReadLine();
             }
             catch(Exception e)
             {
