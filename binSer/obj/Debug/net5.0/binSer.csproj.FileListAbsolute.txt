@@ -1,0 +1,15 @@
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/bin/Debug/net5.0/binSer.deps.json
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/bin/Debug/net5.0/binSer.runtimeconfig.json
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/bin/Debug/net5.0/binSer.runtimeconfig.dev.json
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/bin/Debug/net5.0/binSer.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/bin/Debug/net5.0/ref/binSer.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/bin/Debug/net5.0/binSer.pdb
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.csproj.AssemblyReference.cache
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.GeneratedMSBuildEditorConfig.editorconfig
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.AssemblyInfoInputs.cache
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.AssemblyInfo.cs
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.csproj.CoreCompileInputs.cache
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/ref/binSer.dll
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.pdb
+/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/binSer/obj/Debug/net5.0/binSer.genruntimeconfig.cache

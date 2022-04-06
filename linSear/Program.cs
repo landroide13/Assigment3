@@ -18,7 +18,7 @@ namespace linSear
         public static int linSearch(List<string> li, string x)
         {
             chron.Start();
-            int n = li.Capacity;
+            int n = li.Count;
 
             for (int i = 0; i < n; i++)
             {
