@@ -14,9 +14,9 @@ namespace linSear
         static Stopwatch chron = new Stopwatch();
         public static int linSearch(List<string> li, string x)
         {
-            int n = li.Count;
             chron.Start();
-
+            int n = li.Count;
+            
             for (int i = 0; i < n; i++)
             {
                 if (li[i] == x)
@@ -38,7 +38,7 @@ namespace linSear
             string line;
             try 
             {
-                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100K.txt");
+                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100.txt");
             
                 line = sr.ReadLine();
 
@@ -53,7 +53,7 @@ namespace linSear
                 if (result == -1)
                      Console.WriteLine("Element is not present in array");
                 else
-                    Console.WriteLine("Element is present at index " + result);
+                    Console.WriteLine("Element is present at index " + (result + 1));
                     Console.WriteLine("Element is: " + records[result]);
                     Console.WriteLine("Total Milliseconds: " + chron.Elapsed.TotalMilliseconds);
                     Console.WriteLine();

@@ -13,10 +13,10 @@ namespace binSer
         static Stopwatch chron = new Stopwatch();
         static int binSearch(List<string> li, string x)
         {
+            chron.Start();
             int l = 0;
             int r = records.Count - 1;
-            chron.Start();
-
+            
             while (l <= r) 
             {
                 //int m = l + (r - l) / 2;
@@ -48,7 +48,7 @@ namespace binSer
 
             try
             {
-                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100k.txt");
+                StreamReader sr = new StreamReader("/Users/landrade/Desktop/Whitecleffe/DataStructure/Assingment3/Projects/Pro2/files/movieTitles100K.txt");
             
                 line = sr.ReadLine();
 
@@ -64,7 +64,7 @@ namespace binSer
                      Console.WriteLine("Element is not present in array");
                 else
                     Console.WriteLine();
-                    Console.WriteLine("Element is present at index " + result);
+                    Console.WriteLine("Element is present at index " + (result + 1));
                     Console.WriteLine("Element is: " + records[result]);
                     Console.WriteLine();
                     Console.WriteLine("Total Milliseconds: " + chron.Elapsed.TotalMilliseconds);
